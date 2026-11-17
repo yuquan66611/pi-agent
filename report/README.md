@@ -8,7 +8,7 @@
 - 实验机环境：Windows 11 + Windows PowerShell 5.1；Node.js `v22.23.2`；npm `10.9.8`；git `2.55.0.windows.5`
 - Pi 客户端：`pi 1.5.0`，安装目录 `C:\Users\喻权\.pi\agent`，命令入口 `C:\Users\喻权\.pi\agent\bin\pi.cmd`
 - 模型提供商：DeepSeek（默认 `deepseek-v4-pro`；另配 `deepseek-flash`，支持图片输入）
-- 练习目录：任务一~三在 `C:\Users\喻权\Desktop` 启动；任务四、五的示例文件在 `C:\Users\喻权\Desktop\pi-test`；任务五安装插件后重新启动使用桌面目录
+- 练习目录：任务一~三在 `C:\Users\喻权\Desktop` 启动；任务四的 `hello.py` 与图片测试在 `C:\Users\喻权\Desktop\pi-test`；任务五安装插件后回到桌面目录重新启动 `pi`
 
 本报告中每条结论都对应可核对的截图：S1 为任务一，S2 为任务二，S3_1、S3_2 为任务三，S4 与 S5_1、S5_2（含 `S5原图.png`）为任务四，S6_1~S6_3 为任务五。任务六是选做项，本次未做。
 
