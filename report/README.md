@@ -279,7 +279,7 @@ Extension（插件/扩展）是**可执行**的集成点：可以注册新工具
 | --- | --- |
 | 个人仓库 | <https://github.com/yuquan66611/pi-agent> |
 | 报告入口 | <https://github.com/yuquan66611/pi-agent/blob/main/report/README.md> |
-| 教师仓库作业 Issue | <https://github.com/hunnuOpenSourceSoftware2026/assignments/issues>（标题 `实践课1： Pi Agent安装与使用 yuquan`） |
+| 教师仓库作业 Issue | <https://github.com/hunnuOpenSourceSoftware2026/assignments/issues/184>（标题 `实践课1： Pi Agent安装与使用 yuquan`） |
 | 插件安装命令 | `pi install npm:pi-web-access`（个人级，写入 `~/.pi/agent/settings.json`） |
 | 模型配置 | `~/.pi/agent/settings.json`：`defaultProvider` `deepseek`、`defaultModel` `deepseek-v4-pro`；`~/.pi/agent/models-store.json`：两个 DeepSeek 模型的思考档位与输入类型 |
 | 示例代码 | `pi-test/hello.py`（任务四 `@` 引用的文件） |
