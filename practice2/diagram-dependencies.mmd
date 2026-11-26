@@ -1,0 +1,47 @@
+%% Pi Agent 模块层级与依赖关系
+%% 箭头方向：使用方 → 被依赖方（A --> B 表示 A 依赖 B）
+%% 只画 dependencies 中的运行期直接依赖；devDependencies / peerDependencies 未纳入
+graph TD
+  subgraph L3["第 3 层：应用与扩展"]
+    coding-agent["coding-agent<br/>CLI / TUI 应用"]
+    env["env<br/>远程执行环境"]
+  end
+  subgraph L2["第 2 层：核心运行时"]
+    agent["agent<br/>agent loop"]
+    durable["durable<br/>持久化 harness"]
+  end
+  subgraph L1["第 1 层：领域框架"]
+    ai["ai<br/>统一 LLM API"]
+    chord["chord<br/>对象 / 插件框架"]
+  end
+  subgraph L0["第 0 层：基础契约（无内部依赖）"]
+    telemetry["telemetry"]
+    schema["schema"]
+    tui["tui"]
+    codemode["codemode"]
+    mcp["mcp"]
+  end
+
+  coding-agent --> agent
+  coding-agent --> ai
+  coding-agent --> tui
+  coding-agent --> mcp
+  coding-agent --> codemode
+
+  env --> durable
+  env --> chord
+
+  agent --> ai
+  agent --> schema
+
+  durable --> chord
+  durable --> ai
+  durable --> schema
+  durable --> telemetry
+  durable --> codemode
+
+  ai --> schema
+  ai --> telemetry
+
+  chord --> schema
+  chord --> telemetry
